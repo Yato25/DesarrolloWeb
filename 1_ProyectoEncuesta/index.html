@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Formulario Encuesta</title>
+</head>
+<body>
+    <h1 id="title">
+        <div class="data-container">
+            <span class="btn">ENCUESTA</span>
+        </div>
+    </h1>
+    <p id="description">Esta encuesta sera sobre desarrolo de videojuegos, espero la disfrutes.</p>
+    <section>
+        <form id="survey-form" action="">
+            <fieldset>
+                <label id="name-label" for="name">Introduce tu nombre:<input id="name" type="text" placeholder="Pepe..." required/> </label><!-- Aqui se ingresa nombre del usuario-->
+                <label id="email-label" for="email">Introduce tu direccion de email:<input id="email" type="email" placeholder="estrellita@gmail.com" required/> </label><!-- Aqui se ingresa el email -->
+                <label id="number-label" for="number">Introduce tu numero de celular: <input id="number" type="number" min="1100000000" max="1199999999" placeholder="1188905544"/></label><!-- Aqui va el numero -->
+            </fieldset>
+            <fieldset>
+                <label for="dropdown">
+                    Selecciona tu lenguaje de programacion favorito:
+                    <select id="dropdown">
+                        <option name="language">Python</option>
+                        <option name="language">C#</option>
+                        <option name="language">Java</option>
+                        <option name="language">JavaScript</option>
+                        <option name="language">C++</option>
+                        <option name="language">Kotlin</option>
+                    </select>
+                </label>
+                <label>Selecciona la opcion que mejor te describa:</label>
+                <label for=""><input name="type-developer" type="radio" value="shooter-developer" class="inline"/>Shooters</label>
+                <label for=""><input name="type-developer" type="radio" value="plataform-developer" class="inline"/>Plataformeros</label>
+                <label for=""><input name="type-developer" type="radio" value="shooter-developer" class="inline"/>Aventura Grafica</label>
+                <label for=""><input name="type-developer" type="radio" value="plataform-developer" class="inline"/>8 bits</label>
+                <label for=""><input name="type-developer" type="radio" value="shooter-developer" class="inline"/>Pixel Arts</label>
+            </fieldset>
+            <fieldset>
+                <label for=""><input type="checkbox" value="notifications-email" class="inline"/> Quiero recibir notificaciones.</label>
+                <label for=""><input type="checkbox" value="accept-terms" class="inline" required/> He leido y acepto los terminos y condiciones.</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Escribe alguna sugerencia..."></textarea>
+            </fieldset>
+            <button id="submit" type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
